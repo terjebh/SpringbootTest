@@ -12,8 +12,7 @@ import java.util.Arrays;
 @Controller
 public class User {
 
-    @GetMapping(path = "/user")
-
+    @GetMapping("/user")
     public String user(HttpServletRequest request, Model model) {
         String name = request.getParameter("name");
         if (name == null) {
